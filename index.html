@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=yes" />
+        <title>HSC Simplified</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>   
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white position-fixed mt-4 index-max" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light h-auto">Dashboard</div>
+
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle list-group-item list-group-item-light p-3 mt-2 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trigonometric equations</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#trig-graph">1. Graphing trig functions</a>
+                            <a class="dropdown-item" href="#trig-graph-hard">2. Graphing harder trig functions</a>
+                            <a class="dropdown-item" href="#solve-trig">3. Solving trig equations</a>
+                            <a class="dropdown-item" href="#approx-trig">4. Approximating graph solutions</a>
+                            <a class="dropdown-item" href="#trig-app">5. Applications of trig</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Further derivatives</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#yr11-review">1. Yr 11 review of differentiation</a>
+                            <a class="dropdown-item" href="#trig-deriv">2. Derivatives of trig functions</a>
+                            <a class="dropdown-item" href="#deriv-logs">3. Derivatives of logarithmic functions</a>
+                            <a class="dropdown-item" href="#deriv-expos">4. Derivatives of exponential values</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Further further derivatives</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#deriv-sign">1. Sign of the derivative</a>
+                            <a class="dropdown-item" href="#deriv-turn">2. First derivative of turning points</a>
+                            <a class="dropdown-item" href="#deriv-concave">3. The second derivative and concavity</a>
+                            <a class="dropdown-item" href="#diff-motion">4. Applications of differentiation: motion</a>
+                            <a class="dropdown-item" href="#diff-rates">5. Applications of differentiation: rates</a>
+                            <a class="dropdown-item" href="#diff-opt">6. Applications of differentiation: optimisation question</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Integration begins</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#prim-funct">1. Primitive functions intro</a>
+                            <a class="dropdown-item" href="#indef-integ">2. Indefinite integrals</a>
+                            <a class="dropdown-item" href="#prim-trig-funct">3. Primitives of trigonometric functions</a>
+                            <a class="dropdown-item" href="#integ-expo-funct">4. Integrating exponential functions</a>
+                            <a class="dropdown-item" href="#integ-log-funct">5. Integrating the logarithmic function</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Integration continues</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#area-curve-rect">1. Area under a curve using rectangles</a>
+                            <a class="dropdown-item" href="#def-integs">2. Definite integrals</a>
+                            <a class="dropdown-item" href="#calculus">3. Thereom of calculus and calculating areas</a>
+                            <a class="dropdown-item" href="#area">4. Finding more areas</a>
+                            <a class="dropdown-item" href="#area-2-curve">5. Area between 2 curves</a>
+                            <a class="dropdown-item" href="#area-y-axis">6. Area bound by Y-axis</a>
+                            <a class="dropdown-item" href="#def-integs-trig-functs">7. Definite integrals involving trig functions</a>
+                            <a class="dropdown-item" href="#def-integs-expo-logs-functs">8. Definite integrals involving exponential and logarithmic functions</a>
+                            <a class="dropdown-item" href="#app-integ-motion">9. Applications of integration - Motion</a>
+                            <a class="dropdown-item" href="#app-integ-rates">10. Applications of integration - Rates</a>
+                            <a class="dropdown-item" href="#trap-rule">11. Trapezoidal rule</a>
+                            <a class="dropdown-item" href="#reverse-chain-rule">12. Reverse Chain Rule</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Graphing</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#asymptotes">1. Horizontal and vertical asymptotes</a>
+                            <a class="dropdown-item" href="#rev-curve-sketch">2. Review of common curves + curve-sketching</a>
+                            <a class="dropdown-item" href="#tran-ref-curves">3. Translation + reflection of curves</a>
+                            <a class="dropdown-item" href="#curve-dial">4. Curve dilation</a>
+                            <a class="dropdown-item" href="#comb-trans">5. Combining transformations</a>
+                            <a class="dropdown-item" href="#solv-ineq">6. Solving inequalities</a>
+                            <a class="dropdown-item" href="#graph-solve-eq-ineq">7. Using graphs to solve equations and inequations</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Series and Sequences</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#arith-seq">1. Arithmetic sequences </a>
+                            <a class="dropdown-item" href="#series-sig-notat">2. Series and sigma notation</a>
+                            <a class="dropdown-item" href="#arith-ser">3. Arithmetic series</a>
+                            <a class="dropdown-item" href="#geo-seq">4. Geometric sequences</a>
+                            <a class="dropdown-item" href="#fin-geo-ser">5. Finite geometric series</a>
+                            <a class="dropdown-item" href="#infin-geo-ser">6. Infinite geometric series</a>
+                        </div>
+                    </li>
+                    </ul>
+
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom position-fixed min-vw-100 h-auto index-max">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="ms-2"><span></span></div>
+                        <button class="btn btn-primary" id="sidebarToggle">Topic List</button>
+                        <header class="ms-2 h2 mt-2 navbar-text color-main-headings">HSC Simplified</header>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item"><a class="nav-link color-main-headings" href="https://docs.google.com/forms/d/e/1FAIpQLSdoiFSrWdJgL0J-yNsmQ6eDJhf2uTeAXordkASav1BSMAsgUQ/viewform?usp=sf_link" target="_blank">Reviews</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">Tutoring Classes</a>
+                                        <a class="dropdown-item" href="#!">Social Medias</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- course intro-->
+
+                <div class="container-fluid pt-5 w-65 m-auto text-center">
+
+                    <div class="pt-5 mt-5"><span></span></div>
+
+                    <div class="mt-5 pt-5 text-center align-items-center justify-content-center flex-column min-vh-100" id="page-intro">
+                    <h1 class="mb-3 color-main-headings">Welcome to HSC Simplified.</h1>
+                    <button id="mybutton" class="my-sm-3 btn-purple"> <a class="h2 btn-text" href="#course-intro">Click me</a> </button>    
+                    </div> 
+
+                    <div class="pt-5" id="course-intro"><span></span></div>
+
+                    <div class="mt-5 pt-5 text-center align-items-center justify-content-center flex-column min-vh-100">
+                    <p class="h3 my-sm-3 color-main-headings">Hello!</p>
+                    <p class="h4 my-sm-3">First and foremost, I want to express my gratitude to everybody who have taken the time to check out our website and see what we're all about.
+                    If you're still wondering what exactly we offer, let me introduce you to HSC Simplified. <br class="my-sm-3"></p>
+                    <p class="h4 my-sm-3">It's a comprehensive package that includes all the ups and downs I personally experienced during my own 2U Math journey. And guess what? It paid off- I scored a stellar <span class="color-main-headings">99.9 ATAR</span>, and a solid <span class="color-main-headings">99</span> in advanced mathematics.</p>
+                    <p class="h4 my-sm-3">If you're aiming to replicate my success in 2U Math and if I've managed to grab your attention so far, click the button below. It'll level you up from zero to hero, from start to finish of 2U math.</p>
+                    <button id="mybutton" class="my-sm-3 btn-purple"> <a class="h3 btn-text" href="#adv-math">Begin the course!</a> </button>    
+                    </div>
+
+                    <!-- course start-->
+
+
+                    <div class="pt-3" id="adv-math"><span></span></div>
+
+                    <div class="pt-5 mt-3">
+                    <h1 class="my-sm-4 mt-5 text-center">Advanced Mathematics (2U)</h1>
+                    </div>
+                    
+                    <div class="pt-5" id="trig-graph"><span></span></div>
+
+                    <div class="my-sm-3 pt-3">
+                    
+                    <h2 class="color-main-headings mb-3" id="trig-graph">Topic 1- Trigonometric equations</h2>
+
+                    <h4 class="mt-4 color-main-subtopics" >1. Graphing trigonometric functions</h4>
+                    <p>In this lesson, the fundamentals of graphing trigonometric functions are explored, with a specific focus on sine, cosine, and tangent functions, 
+                    along with their properties. Additionally, the concepts of phase shift, amplitude, and frequency are discussed in detail. Students will gain a 
+                    comprehensive understanding of how to graph these functions and interpret their characteristics.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/yfnzxuEMsBw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-examine and apply transformations to sketch functions of the form 𝑦 = 𝑘𝑓(𝑎(𝑥 + 𝑏))+ 𝑐, where 𝑎, 𝑏, 𝑐 and 𝑘 are constants, in a variety of contexts, 
+                    where 𝑓(𝑥) is one of sin 𝑥, cos 𝑥 or tan 𝑥, stating the domain and range when appropriate.</p>
+                    <p>-use technology or otherwise to examine the effect on the graphs of changing the amplitude (where appropriate),
+                     𝑦 = 𝑘𝑓(𝑥), the period, 𝑦 = 𝑓(𝑎𝑥), the phase, 𝑦 = 𝑓(𝑥 +𝑏), and the vertical shift, 𝑦 = 𝑓(𝑥)+𝑐 .</p>
+                    <p>-use 𝑘, 𝑎, 𝑏, 𝑐 to describe transformational shifts and sketch graph.</p>
+                    </div>    
+
+                    <div class="pt-5" id="trig-graph-hard"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="trig-graph-hard">2. Graphing harder trigonometric functions</h4>
+                    <p>We will delve deeper into graphing more complex trigonometric functions, covering combinations of phase shift, amplitude, and frequency.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Vuk-UwRLCts" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-examine and apply transformations to sketch functions of the form 𝑦 = 𝑘𝑓(𝑎(𝑥 + 𝑏))+ 𝑐, where 𝑎, 𝑏, 𝑐 and 𝑘 are constants, in a variety of contexts, 
+                    where 𝑓(𝑥) is one of sin 𝑥, cos 𝑥 or tan 𝑥, stating the domain and range when appropriate.</p>
+                    <p>-use technology or otherwise to examine the effect on the graphs of changing the amplitude (where appropriate),
+                     𝑦 = 𝑘𝑓(𝑥), the period, 𝑦 = 𝑓(𝑎𝑥), the phase, 𝑦 = 𝑓(𝑥 +𝑏), and the vertical shift, 𝑦 = 𝑓(𝑥)+𝑐 .</p>
+                    <p>-use 𝑘, 𝑎, 𝑏, 𝑐 to describe transformational shifts and sketch graph.</p>
+                    </div>
+
+                    <div class="pt-5" id="solve-trig"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="solve-trig">3. Solving trigonometric equations</h4>
+                    <p>We will explore how to solve trigonometric equations, including various methods for isolating the variable and finding solutions within specific intervals.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/1U8Kr0zSdYk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-solve trigonometric equations involving functions of the form 𝑘𝑓(𝑎(𝑥 + 𝑏))+ 𝑐, using technology or otherwise, within a specified domain.</p>
+                    </div>
+
+                    <div class="pt-5" id="approx-trig"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="approx-trig">4. Approximating graphical solutions to trigonometric equations</h4>
+                    <p>This lesson focuses on approximating graphical solutions to trigonometric equations, using visualisation tools to understand the relationships.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/a7HC5pLPhkY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-solve trigonometric equations involving functions of the form 𝑘𝑓(𝑎(𝑥 + 𝑏))+ 𝑐, using technology or otherwise, within a specified domain.</p>
+                    </div>
+
+                    <div class="pt-5" id="trig-app"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="trig-app">5. Applications of trigonometry</h4>
+                    <p>We will discuss various applications of trigonometry in real-world contexts:</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/MdrH0cG-ipY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-use trigonometric functions of the form 𝑘𝑓(𝑎(𝑥 + 𝑏))+ 𝑐 to model and/or solve practical problems involving periodic phenomena.</p>
+                    </div>
+                    </div>   
+
+
+
+                    <div class="my-sm-3 pt-3">
+
+                    <div class="pt-5" id="yr11-review"><span></span></div>
+
+                    <h2 class="color-main-headings mb-3" id="derivatives">Topic 2- Further derivatives</h2>
+
+                    <h4 class="mt-4 color-main-subtopics" id="yr11-review">1. Review of year 11 differentiation</h4>
+                    <p>We will revisit the principles of differentiation learned in year 11, including the power rule, product rule, and quotient rule.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/0Kv5dZSZHVY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-apply the product, quotient and chain rules to differentiate functions of the form 𝑓(𝑥)𝑔(𝑥), 𝑓(𝑥) / 𝑔(𝑥) and 𝑓(𝑔(𝑥)) where 𝑓(𝑥) 
+                    and 𝑔(𝑥) are any of the functions covered in the scope of this syllabus, for example 𝑥𝑒^𝑥 ,tan 𝑥 , 1/ 𝑥^𝑛 , 𝑥 sin 𝑥 , 𝑒^−𝑥*sin 𝑥 and 𝑓(𝑎𝑥 + 𝑏) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {𝑒 𝑓(𝑥) } = 𝑓′(𝑥)𝑒^𝑓(𝑥) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {ln 𝑓(𝑥)} = 𝑓 ′ (𝑥) 𝑓(𝑥) .</p>
+                    <p>-use the logarithmic laws to simplify an expression before differentiating.</p>
+                    <p>-use the composite function rule (chain rule) to establish and use the derivatives of sin(𝑓(𝑥)), cos(𝑓(𝑥)) and tan(𝑓(𝑥)) .</p>
+                    </div> 
+                    
+                    <div class="pt-5" id="trig-deriv"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="trig-deriv">2. Derivatives of trigonometric functions</h4>
+                    <p>We will explore the derivatives of trigonometric functions and their implications.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/56CzDqOO1xs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-establish the formulae 𝑑/𝑑𝑥 (sin 𝑥) = cos 𝑥 and 𝑑/𝑑𝑥 (cos 𝑥) = −sin 𝑥 by numerical estimations 
+                    of the limits and informal proofs based on geometric constructions.</p>
+                    <p>-calculate derivatives of trigonometric functions.</p>
+                    <p>-apply the product, quotient and chain rules to differentiate functions of the form 𝑓(𝑥)𝑔(𝑥), 𝑓(𝑥) / 𝑔(𝑥) and 𝑓(𝑔(𝑥)) where 𝑓(𝑥) and 𝑔(𝑥) 
+                    are any of the functions covered in the scope of this syllabus, for example 𝑥𝑒^𝑥 ,tan 𝑥 , 1/ 𝑥^𝑛 , 𝑥 sin 𝑥 , 𝑒^−𝑥*sin 𝑥 and 𝑓(𝑎𝑥 + 𝑏) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {𝑒 𝑓(𝑥) } = 𝑓′(𝑥)𝑒^𝑓(𝑥) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {ln 𝑓(𝑥)} = 𝑓 ′ (𝑥) 𝑓(𝑥).</p>
+                    <p>-use the logarithmic laws to simplify an expression before differentiating.</p>
+                    <p>-use the composite function rule (chain rule) to establish and use the derivatives of sin(𝑓(𝑥)), cos(𝑓(𝑥)) and tan(𝑓(𝑥)).</p>
+                    </div> 
+
+                    <div class="pt-5" id="deriv-logs"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="deriv-logs">3. Derivatives of logarithmic functions</h4>
+                    <p>This lesson will cover derivatives of logarithmic functions, learning to differentiate both natural and common logarithms.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/tnHuFiHCilY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-calculate the derivative of the natural logarithm function 𝑑/𝑑𝑥 (ln 𝑥) = 1/𝑥  establish and use 
+                    the formula 𝑑/𝑑𝑥(log𝑎𝑥) = 1/𝑥lna.</p>
+                    <p>-apply the product, quotient and chain rules to differentiate functions of the form 𝑓(𝑥)𝑔(𝑥), 𝑓(𝑥) / 𝑔(𝑥) and 𝑓(𝑔(𝑥)) where 𝑓(𝑥) and 𝑔(𝑥) 
+                    are any of the functions covered in the scope of this syllabus, for example 𝑥𝑒^𝑥 ,tan 𝑥 , 1/ 𝑥^𝑛 , 𝑥 sin 𝑥 , 𝑒^−𝑥*sin 𝑥 and 𝑓(𝑎𝑥 + 𝑏) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {𝑒 𝑓(𝑥) } = 𝑓′(𝑥)𝑒^𝑓(𝑥) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {ln 𝑓(𝑥)} = 𝑓 ′ (𝑥) 𝑓(𝑥) .</p>
+                    <p>-use the logarithmic laws to simplify an expression before differentiating. </p>
+                    <p>-use the composite function rule (chain rule) to establish and use the derivatives of sin(𝑓(𝑥)), cos(𝑓(𝑥)) and tan(𝑓(𝑥)).</p>
+                    </div> 
+
+                    <div class="pt-5" id="deriv-expos"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="deriv-expos">4. Derivatives of exponential functions</h4>
+                    <p>We will discuss the process of differentiating exponential functions, introducing the unique properties of the natural exponential function.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/vaUgHIhyYCc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-establish and use the formula 𝑑/𝑑𝑥 (𝑎 𝑥 ) = (ln 𝑎)𝑎^𝑥.</p>
+                    <p>-using graphing software or otherwise, sketch and explore the gradient function for a given exponential function, recognise it as another 
+                    exponential function and hence determine the relationship between exponential functions and their derivatives.</p>
+                    <p>-aapply the product, quotient and chain rules to differentiate functions of the form 𝑓(𝑥)𝑔(𝑥), 𝑓(𝑥) / 𝑔(𝑥) and 𝑓(𝑔(𝑥)) where 𝑓(𝑥) and 𝑔(𝑥) 
+                    are any of the functions covered in the scope of this syllabus, for example 𝑥𝑒^𝑥 ,tan 𝑥 , 1/ 𝑥^𝑛 , 𝑥 sin 𝑥 , 𝑒^−𝑥*sin 𝑥 and 𝑓(𝑎𝑥 + 𝑏) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {𝑒 𝑓(𝑥) } = 𝑓′(𝑥)𝑒^𝑓(𝑥) .</p>
+                    <p>-use the composite function rule (chain rule) to establish that 𝑑/𝑑𝑥 {ln 𝑓(𝑥)} = 𝑓 ′ (𝑥) 𝑓(𝑥) .</p>
+                    <p>-use the logarithmic laws to simplify an expression before differentiating.</p>
+                    <p>-use the composite function rule (chain rule) to establish and use the derivatives of sin(𝑓(𝑥)), cos(𝑓(𝑥)) and tan(𝑓(𝑥)) .</p>
+                    </div> 
+                    </div>    
+
+
+
+                    <div class="my-sm-3 pt-3">
+
+                    <div class="pt-5" id="deriv-sign"><span></span></div>
+
+                    <h2 class="color-main-headings mb-3" id="f-derivatives">Topic 3- Further further derivatives</h2>
+                    
+                    <h4 class="mt-4 color-main-subtopics" id="deriv-sign">1. The sign of the derivative</h4>
+                    <p>We will examine the sign of the derivative and its significance in analysing a function's behaviour.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/g1o5j54Z8AM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the first derivative to investigate the shape of the graph of a function.</p>
+                    <p>-deduce from the sign of the first derivative whether a function is increasing, 
+                    decreasing or stationary at a given point or in a given interval .</p>
+                    <p>-use the first derivative to find intervals over which a 
+                    function is increasing or decreasing, and where its stationary points are located.</p>
+                    <p>-use the first derivative to investigate a stationary point of a function over a 
+                    given domain, classifying it as a local maximum, local minimum or neither .</p>
+                    <p>-determine the greatest or least value of a function over a given domain 
+                    (if the domain is not given, the natural domain of the function is assumed) and 
+                    distinguish between local and global minima and maxima.</p>
+                    </div>  
+                    
+                    <div class="pt-5" id="deriv-turn"><span></span></div>                    
+
+                    <h4 class="mt-5 color-main-subtopics" id="deriv-turn">2. The first derivative and turning points</h4>
+                    <p>In this lesson, we will discuss how the first derivative relates to turning points or extrema of a function</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/fEB1b8FDMMw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the first derivative to investigate the shape of the graph of a function.</p>
+                    <p>-deduce from the sign of the first derivative whether a function is increasing, 
+                    decreasing or stationary at a given point or in a given interval.</p>
+                    <p>-use the first derivative to find intervals over which a 
+                    function is increasing or decreasing, and where its stationary points are located.</p>
+                    <p>-use the first derivative to investigate a stationary point of a function over a 
+                    given domain, classifying it as a local maximum, local minimum or neither.</p>
+                    <p>-determine the greatest or least value of a function over a given domain 
+                    (if the domain is not given, the natural domain of the function is assumed) and 
+                    distinguish between local and global minima and maxima.</p>
+                    </div> 
+
+                    <div class="pt-5" id="deriv-concave"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="deriv-concave">3. The second derivative and concavity</h4>
+                    <p>We will delve into the second derivative, its relation to concavity, and how it can identify inflection points.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/JqQxfOSMurI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-define and interpret the concept of the second derivative as the rate of change of the first derivative function 
+                    in a variety of contexts, for example recognise acceleration as the second derivative of displacement with respect to time.</p>
+                    <p>-understand the concepts of concavity and points of inflection and their relationship with the second derivative.</p>
+                    <p>-use the second derivative to determine concavity and the nature of stationary points.</p>
+                    <p>-understand that when the second derivative is equal to 0 this does not necessarily represent a point of inflection.</p>
+                    <p>-use calculus to determine and verify the nature of stationary points, find local and global maxima and minima and points 
+                    of inflection (horizontal or otherwise), examine behaviour of a function as 𝑥 → ∞ and 𝑥 → −∞ and hence sketch the graph of the function.</p>
+                    </div>     
+
+                    <div class="pt-5" id="diff-motion"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="diff-motion">4. Applications of differentiation: motion</h4>
+                    <p>The concept of differentiation will be applied to motion problems, helping us understand velocity, acceleration, and related concepts.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/RjxqsF_ZBXE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-use any of the functions covered in the scope of this syllabus and their derivatives to solve practical and abstract problems.</p>
+                    </div>
+
+                    <div class="pt-5" id="diff-rates"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="diff-rates">5. Applications of differentiation: rates</h4>
+                    <p>We will explore the concept of rates of change and how differentiation can be used to investigate these rates.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/bb7O1GxMEWo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-use any of the functions covered in the scope of this syllabus and their derivatives to solve practical and abstract problems.</p>
+                    </div>
+
+                    <div class="pt-5" id="diff-opt"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="diff-opt">6. Applications of differentiation: optimisation question</h4>
+                    <p>We will focus on optimization problems, showing how calculus can be used to find optimal solutions in various scenarios.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/PuBQrL_jgyA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-solve optimisation problems for any of the functions covered in the scope of this syllabus, in a wide variety of
+                    contexts including displacement, velocity, acceleration, area, volume, business, finance and growth and decay.</p>
+                    <p>-define variables and construct functions to represent the relationships between variables related to contexts
+                    involving optimisation, sketching diagrams or completing diagrams if necessary.</p>
+                    <p>-use calculus to establish the location of local and global maxima and minima, 
+                    including checking endpoints of an interval if required.</p>
+                    <p>-evaluate solutions and their reasonableness given the 
+                    constraints of the domain and formulate appropriate conclusions to optimisation problems.</p>
+                    </div> 
+                    </div>
+
+
+
+                    <div class="my-sm-3 pt-3">
+
+                    <div class="pt-5" id="prim-funct"><span></span></div>
+
+                    <h2 class="color-main-headings mb-3" id="integration">Topic 4- Integration begins</h2>    
+
+                    <h4 class="mt-4 color-main-subtopics" id="prim-funct">1. Primitive function's introduction</h4>
+                    <p>This lesson will introduce the concept of the primitive function or antiderivative.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/M8PIkJD7vBs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-Define anti-differentiation as the reverse 
+                    of differentiation and use the notation ∫ 𝑓(𝑥) 𝑑𝑥 for antiderivatives or indefinite integrals.</p>
+                    <p>-recognise that any two anti-derivatives of 𝑓(𝑥) differ by a constant.</p>
+                    </div>    
+
+                    <div class="pt-5" id="indef-integ"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="indef-integ">2. Indefinite integrals</h4>
+                    <p>We will learn about indefinite integrals, their properties, and techniques for evaluating them.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/V5ixhKq9df4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-Define anti-differentiation as the reverse of differentiation and use 
+                    the notation ∫ 𝑓(𝑥) 𝑑𝑥 for antiderivatives or indefinite integrals.</p>
+                    <p>-recognise that any two anti-derivatives of 𝑓(𝑥) differ by a constant.</p>
+                    <p>-establish and use the formula ∫ 𝑥^𝑛𝑑𝑥 = 1 /𝑛+1 𝑥^(𝑛+1) + 𝑐, for 𝑛 ≠ −1 .</p>
+                    <p>-establish and use the formula ∫ 𝑓′(𝑥)[𝑓(𝑥)]^𝑛𝑑𝑥 = 1/𝑛+1 [𝑓(𝑥)] ^𝑛+1 + 𝑐 where 𝑛 ≠ −1 (the reverse chain rule).</p>
+                    <p>-determine indefinite integrals of the form ∫ 𝑓(𝑎𝑥 + 𝑏) 𝑑𝑥 .</p>
+                    <p>-determine 𝑓(𝑥), given 𝑓′(𝑥) and an initial condition 𝑓(𝑎) = 𝑏 
+                    in a range of practical and abstract applications including coordinate geometry, business and science.</p>
+                    </div> 
+
+                    <div class="pt-5" id="prim-trig-funct"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="prim-trig-funct">3. Primitives of trigonometric functions</h4>
+                    <p>We will cover the primitives of trigonometric functions, including integral identities and their uses.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/PoBcwOa4O-A" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-establish and use the formulae for the anti-derivatives of sin (𝑎𝑥 + 𝑏), cos (𝑎𝑥 + 𝑏) and sec^2(𝑎𝑥 + 𝑏) .</p>
+                    </div> 
+
+                    <div class="pt-5" id="integ-expo-funct"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="integ-expo-funct">4. Integrating the exponential function</h4>
+                    <p>The process of integrating the exponential function will be discussed in detail.</p>                    
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/msVNkNx1dyc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-establish and use the formulae ∫ 𝑒^𝑥𝑑𝑥 = 𝑒^𝑥 + 𝑐 and ∫ 𝑒^𝑎𝑥+𝑏𝑑𝑥 = 1/𝑎 𝑒^𝑎𝑥+𝑏 + c .</p>
+                    <p>-establish and use the formulae ∫ 𝑎^𝑥𝑑𝑥 = 𝑎^𝑥/ln 𝑎 + C .</p>
+                    </div> 
+
+                    <div class="pt-5" id="integ-log-funct"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="integ-log-funct">5. Integrating the hyperbolic function</h4>
+                    <p>We will dive into the integration of logarithmic functions, explaining the method and its implications.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5iVx4Hgkqcc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-establish and use the formulae 
+                    ∫ 1/𝑥 𝑑𝑥 = ln |𝑥| + 𝑐 and ∫ 𝑓 ′ (𝑥) 𝑓(𝑥) 𝑑𝑥 = ln |𝑓(𝑥)| + 𝑐 for 𝑥 ≠ 0, 𝑓(𝑥) ≠ 0, respectively.</p>
+                    </div>
+                    </div>    
+
+
+
+                    <div class="my-sm-3 pt-3">
+
+                    <div class="pt-5" id="area-curve-rect"><span></span></div>    
+
+                    <h2 class="color-main-headings mb-3" id="integration-2">Topic 5- Integration continues</h2>
+
+                    <h4 class="mt-4 color-main-subtopics" id="area-curve-rect">1. Investigation: Finding the area under a curve using rectangles</h4>
+                    <p>In this lesson, we will explore the use of rectangles to approximate the area under a curve.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/2CNqbTW6Ebo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-know that ‘the area under a curve’ refers to the area between a function 
+                    and the 𝑥-axis, bounded by two values of the independent variable and interpret the area under a curve in a variety of contexts.</p>
+                    <p>-determine the approximate area under a curve using a variety of shapes including squares, rectangles (inner and outer rectangles), 
+                    triangles or trapezia.</p>
+                    <p>-consider functions which cannot be integrated in the scope of this syllabus, for example 𝑓(𝑥) = ln 𝑥, and explore the effect of 
+                    increasing the number of shapes used.</p>
+                    </div>
+
+                    <div class="pt-5" id="def-integs"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="def-integs">2. The definite integral</h4>
+                    <p>We will introduce the concept of the definite integral and demonstrate how to calculate it.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/CS7co-BsNyE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the notation of the definite integral a∫b 𝑓(𝑥) 𝑑𝑥 for the area under the curve 𝑦 = 𝑓(𝑥) from 𝑥 = 𝑎 to 𝑥 = 𝑏 if 𝑓(𝑥) ≥ 0 .</p>
+                    <p>-use geometric ideas to find the definite integral ∫ 𝑓 𝑏 𝑎 (𝑥) 𝑑𝑥 where 𝑓(𝑥) is positive throughout an interval 𝑎 ≤ 𝑥 ≤ 𝑏 and the 
+                    shape of 𝑓(𝑥) allows such calculations, for example when 𝑓(𝑥) is a straight line in the interval or 𝑓(𝑥) is a semicircle in the interval.</p>
+                    <p>-use geometric ideas to find the definite integral ∫ 𝑓 𝑏 𝑎 (𝑥) 𝑑𝑥 where 𝑓(𝑥) is positive throughout an interval 𝑎 ≤ 𝑥 ≤ 𝑏 and the shape of
+                    𝑓(𝑥) allows such calculations, for example when 𝑓(𝑥) is a straight line in the interval or 𝑓(𝑥) is a semicircle in the interval.</p>
+                    <p>-using technology or otherwise, investigate the link between the anti-derivative and the area under a curve.</p>
+                    <p>-interpret ∫ 𝑏 𝑎 𝑓(𝑥) 𝑑𝑥 as a sum of signed areas.</p>
+                    <p>-understand the concept of the signed area function 𝐹(𝑥) = ∫ 𝑓(𝑡) 𝑑𝑡 𝑥 𝑎 .</p>
+                    </div>
+
+                    <div class="pt-5" id="calculus"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="calculus">3. Fundamental theorem of calculus and calculating areas</h4>
+                    <p>The fundamental theorem of calculus will be introduced and its implications for finding areas will be discussed.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/ph3gITe76GA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1">
+                    <p>-use geometric ideas to find the definite integral ∫ 𝑓 𝑏 𝑎 (𝑥) 𝑑𝑥 where 𝑓(𝑥) is positive throughout an interval 𝑎 ≤ 𝑥 ≤ 𝑏 and the shape of
+                    𝑓(𝑥) allows such calculations, for example when 𝑓(𝑥) is a straight line in the interval or 𝑓(𝑥) is a semicircle in the interval.</p>
+                    <p>-using technology or otherwise, investigate the link between the anti-derivative and the area under a curve.</p>
+                    <p>-interpret ∫ 𝑏 𝑎 𝑓(𝑥) 𝑑𝑥 as a sum of signed areas.</p>
+                    <p>-understand the concept of the signed area function 𝐹(𝑥) = ∫ 𝑓(𝑡) 𝑑𝑡 𝑥 𝑎 .</p>
+                    <p>-use the formula a∫b 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏)− 𝐹(𝑎), where 𝐹(𝑥) is the anti-derivative of 𝑓(𝑥), to calculate definite integrals.</p>
+                    <p>-understand and use the Fundamental Theorem of Calculus, 𝐹 ′ (𝑥) = 𝑑/𝑑𝑥 [∫ 𝑓(𝑡) 𝑑𝑡] = 𝑓(𝑥) 𝑥 𝑎 and illustrate its proof geometrically.</p>
+                    <p>use symmetry properties of even and odd functions to simplify calculations of area.</p>
+                    <p>-recognise and use the additivity and linearity of definite integrals (ACMMM128) 
+                    – calculate total change by integrating instantaneous rate of change.</p>
+                    <p>-calculate the area under a curve.</p>
+                    </div> 
+
+                    <div class="pt-5" id="area"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="area">4. Finding more areas</h4>
+                    <p>We will expand our understanding of areas by calculating those bounded by non-linear functions.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/D3smTjEcrjk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the formula a∫b 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏)− 𝐹(𝑎), where 𝐹(𝑥) is the anti-derivative of 𝑓(𝑥), to calculate definite integrals.</p>
+                    <p>-understand and use the Fundamental Theorem of Calculus, 𝐹 ′ (𝑥) = 𝑑/𝑑𝑥 [∫ 𝑓(𝑡) 𝑑𝑡] = 𝑓(𝑥) 𝑥 𝑎 and illustrate its proof geometrically.</p>
+                    <p>-use symmetry properties of even and odd functions to simplify calculations of area.</p>
+                    <p>-recognise and use the additivity and linearity of definite integrals (ACMMM128) – calculate total change by integrating instantaneous rate of change.</p>
+                    <p>-calculate the area under a curve.</p>
+                    </div>
+
+                    <div class="pt-5" id="area-2-curve"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="area-2-curve">5. Areas between two curves</h4>
+                    <p>We will cover the topic of areas between two curves, introducing the subtraction technique.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/GpcsEGflH4U" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the formula a∫b 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏)− 𝐹(𝑎), where 𝐹(𝑥) is the anti-derivative of 𝑓(𝑥), to calculate definite integrals.</p>
+                    <p>-understand and use the Fundamental Theorem of Calculus, 𝐹 ′ (𝑥) = 𝑑/𝑑𝑥 [∫ 𝑓(𝑡) 𝑑𝑡] = 𝑓(𝑥) 𝑥 𝑎 and illustrate its proof geometrically.</p>
+                    <p>-use symmetry properties of even and odd functions to simplify calculations of area.</p>
+                    <p>-recognise and use the additivity and linearity of definite integrals (ACMMM128) – calculate total change by integrating instantaneous rate of change.</p>
+                    <p>-calculate the area under a curve.</p>
+                    <p>-calculate areas between curves determined by any functions within the scope of this syllabus.</p>
+                    </div>
+
+                    <div class="pt-5" id="area-y-axis"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="area-y-axis">6. Area bounded by the y-axis</h4>
+                    <p>We will discuss the computation of areas bounded by the y-axis, emphasizing the role of the definite integral.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/f5xmTADE-JU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-calculate the area under a curve.</p>
+                    <p>-calculate areas between curves determined by any functions within the scope of this syllabus.</p>
+                    </div>
+
+                    <div class="pt-5" id="def-integs-trig-functs"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="def-integs-trig-functs">7. Definite integrals involving trigonometric functions</h4>
+                    <p>The lesson will explore definite integrals involving trigonometric functions, learning to integrate sine, cosine, and other functions over defined intervals.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/jpJlGhfTOpA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the formula a∫b 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏)− 𝐹(𝑎), where 𝐹(𝑥) is the anti-derivative of 𝑓(𝑥), to calculate definite integrals.</p>
+                    </div>
+
+                    <div class="pt-5" id="def-integs-expo-logs-functs"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="def-integs-expo-logs-functs">8. Definite integrals involving exponential and logarithmic functions</h4>
+                    <p>We will learn to compute definite integrals involving exponential and logarithmic functions.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/TveXTTjnlhk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the formula a∫b 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏)− 𝐹(𝑎), where 𝐹(𝑥) is the anti-derivative of 𝑓(𝑥), to calculate definite integrals.</p>
+                    </div>
+
+                    <div class="pt-5" id="app-integ-motion"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="app-integ-motion">9. Applications of integration - Motion</h4>
+                    <p>Applications of integration in the context of motion, including displacement and total distance travelled, will be discussed.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/xVUDETG80kc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the formula a∫b 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏)− 𝐹(𝑎), where 𝐹(𝑥) is the anti-derivative of 𝑓(𝑥), to calculate definite integrals.</p>
+                    </div>
+                        
+                    <div class="pt-5" id="app-integ-rates"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="app-integ-rates">10. Applications of integration - Rates</h4>
+                    <p>The concept of rates in the context of integration will be addressed.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/U4wPftcZeLk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-integrate functions and find indefinite or definite integrals and apply this technique to solving practical problems.</p>
+                    </div>
+
+                    <div class="pt-5" id="trap-rule"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="trap-rule">11. Trapezoidal rule</h4>
+                    <p>We will learn about the trapezoidal rule and its use for approximating definite integrals.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/BPS8J2qP-go" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the Trapezoidal rule to estimate areas under curves.</p>
+                    <p>-use geometric arguments (rather than substitution into a given formula) to approximate a definite integral of the form 
+                    a∫b 𝑓 (𝑥) 𝑑𝑥, where 𝑓(𝑥) ≥ 0, on the interval 𝑎 ≤ 𝑥 ≤ 𝑏, by dividing the area into a given number of trapezia with equal widths.</p>
+                    <p>demonstrate understanding of the formula: ∫ 𝑓 𝑏 𝑎 (𝑥) 𝑑𝑥 ≈ (𝑏−𝑎)/2𝑛 [𝑓(𝑎) + 𝑓(𝑏)+ 2{𝑓(𝑥1 )+ ⋯ + 𝑓(𝑥𝑛−1 )}] where 𝑎 = 𝑥0 and 
+                    𝑏 = 𝑥𝑛, and the values of 𝑥0 , 𝑥1 , 𝑥2 , … , 𝑥𝑛 are found by dividing the interval 𝑎 ≤ 𝑥 ≤ 𝑏 into 𝑛 equal subintervals.</p>
+                    </div>
+
+                    <div class="pt-5" id="reverse-chain-rule"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="reverse-chain-rule">12. Reverse Chain Rule</h4>
+                    <p>The reverse chain rule, or integration by substitution, will be covered, including its application to more complex integrals.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/4BwF1A-5aWg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use the formula a∫b 𝑓(𝑥) 𝑑𝑥 = 𝐹(𝑏)− 𝐹(𝑎), where 𝐹(𝑥) is the anti-derivative of 𝑓(𝑥), to calculate definite integrals.</p>
+                    </div>
+                    </div>    
+
+                    
+                    
+                    <div class="my-sm-3 pt-3">
+
+                    <div class="pt-5" id="asymptotes"><span></span></div>
+
+                    <h2 class="color-main-headings mb-3" id="graphing">Topic 6- Graphing</h2>
+
+
+                    <h4 class="mt-4 color-main-subtopics" id="asymptotes">1. Horizontal and vertical asymptotes</h4>
+                    <p>In this lesson, we will discuss horizontal and vertical asymptotes, explaining their role in the analysis of functions.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/T-GWNGqRPKs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use graphical methods with supporting algebraic working to solve a variety of practical problems involving any of 
+                    the functions within the scope of this syllabus, in both real-life and abstract contexts.</p>
+                    <p>-select and use an appropriate method to graph a given function, including finding intercepts,
+                     considering the sign of 𝑓(𝑥) and using symmetry.</p>
+                    <p>determine asymptotes and discontinuities where appropriate (vertical and horizontal asymptotes only).</p>
+                    <p>-determine the number of solutions of an equation by considering appropriate graphs.</p>
+                    <p>-solve linear and quadratic inequalities by sketching appropriate graphs.</p>    
+                    </div>
+
+                    <div class="pt-5" id="rev-curve-sketch"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="rev-curve-sketch">2. Review of common curves and a curve-sketching menu</h4>
+                    <p>We will review common curves and outline a methodical approach to sketching various types of functions.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/Ode8EnhGxH8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use graphical methods with supporting algebraic working to solve a variety of practical problems involving any of 
+                    the functions within the scope of this syllabus, in both real-life and abstract contexts.</p>
+                    <p>-select and use an appropriate method to graph a given function, including finding intercepts,
+                     considering the sign of 𝑓(𝑥) and using symmetry.</p>
+                    <p>-determine asymptotes and discontinuities where appropriate (vertical and horizontal asymptotes only).</p>
+                    <p>-determine the number of solutions of an equation by considering appropriate graphs.</p>
+                    <p>-solve linear and quadratic inequalities by sketching appropriate graphs.</p>    
+                    </div>
+
+                    <div class="pt-5" id="tran-ref-curves"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="tran-ref-curves">3. Translation and reflection of curves</h4>
+                    <p>The concepts of translation and reflection of curves will be explored, learning how these transformations affect the graph of a function.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/8uK0kD99tNE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-apply transformations to sketch functions of the form 𝑦 = 𝑘𝑓(𝑎(𝑥 +𝑏))+𝑐, where 𝑓(𝑥) 
+                    is a polynomial, reciprocal, absolute value, exponential or logarithmic function and 𝑎, 𝑏, 𝑐 and 𝑘 are constants.</p>
+                    <p>-examine translations and the graphs of 𝑦 = 𝑓(𝑥)+𝑐 and 𝑦 = 𝑓(𝑥 +𝑏) using technology.</p>
+                    <p>-examine dilations and the graphs of 𝑦 = 𝑘𝑓(𝑥) and 𝑦 = 𝑓(𝑎𝑥) using technology.</p>
+                    <p>-recognise that the order in which transformations are applied is important in the construction of the resulting function or graph.</p>    
+                    </div>
+
+                    <div class="pt-5" id="curve-dial"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="curve-dial">4. Curve dilation</h4>
+                    <p>We will delve into the concept of curve dilation, understanding its impact on the shape of a function's graph.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/MmEOZuoE9f8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-apply transformations to sketch functions of the form 𝑦 = 𝑘𝑓(𝑎(𝑥 +𝑏))+𝑐, where 𝑓(𝑥) 
+                    is a polynomial, reciprocal, absolute value, exponential or logarithmic function and 𝑎, 𝑏, 𝑐 and 𝑘 are constants.</p>
+                    <p>-examine translations and the graphs of 𝑦 = 𝑓(𝑥)+𝑐 and 𝑦 = 𝑓(𝑥 +𝑏) using technology.</p>
+                    <p>-examine dilations and the graphs of 𝑦 = 𝑘𝑓(𝑥) and 𝑦 = 𝑓(𝑎𝑥) using technology.</p>
+                    <p>-recognise that the order in which transformations are applied is important in the construction of the resulting function or graph.</p>    
+                    </div>
+
+                    <div class="pt-5" id="comb-trans"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="comb-trans">5. Combining transformations</h4>
+                    <p>Combining transformations, including translations, reflections, and dilations, will be addressed in this lesson.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/czVRNBwBBOc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-apply transformations to sketch functions of the form 𝑦 = 𝑘𝑓(𝑎(𝑥 +𝑏))+𝑐, where 𝑓(𝑥) 
+                    is a polynomial, reciprocal, absolute value, exponential or logarithmic function and 𝑎, 𝑏, 𝑐 and 𝑘 are constants.</p>
+                    <p>-examine translations and the graphs of 𝑦 = 𝑓(𝑥)+𝑐 and 𝑦 = 𝑓(𝑥 +𝑏) using technology.</p>
+                    <p>-examine dilations and the graphs of 𝑦 = 𝑘𝑓(𝑥) and 𝑦 = 𝑓(𝑎𝑥) using technology.</p>
+                    <p>-recognise that the order in which transformations are applied is important in the construction of the resulting function or graph.</p>    
+                    </div>
+
+                    <div class="pt-5" id="solv-ineq"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="solv-ineq">6. Solving inequalities</h4>
+                    <p>We will learn how to solve inequalities graphically, analysing regions defined by inequalities.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/eFnJ9kf08TQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use graphical methods with supporting algebraic working to solve a variety of 
+                    practical problems involving any of the functions within the scope of this syllabus, in both real-life and abstract contexts.</p>
+                    <p>-select and use an appropriate method to graph a given function, including finding intercepts, considering the sign of 𝑓(𝑥) and using symmetry.</p>
+                    <p>-determine asymptotes and discontinuities where appropriate (vertical and horizontal asymptotes only).</p>
+                    <p>-determine the number of solutions of an equation by considering appropriate graphs.</p>
+                    <p>-solve linear and quadratic inequalities by sketching appropriate graphs.</p>    
+                    </div>
+
+                    <div class="pt-5" id="graph-solve-eq-ineq"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="graph-solve-eq-ineq">7. Using graphs to solve equations and inequations</h4>
+                    <p>We will further use graphical methods to solve equations and inequations, providing a visual perspective to these mathematical problems.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VRwNQaLPuuA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-use graphical methods with supporting algebraic working to solve a variety of 
+                    practical problems involving any of the functions within the scope of this syllabus, in both real-life and abstract contexts.</p>
+                    <p>-select and use an appropriate method to graph a given function, including finding intercepts, considering the sign of 𝑓(𝑥) and using symmetry.</p>
+                    <p>-determine asymptotes and discontinuities where appropriate (vertical and horizontal asymptotes only).</p>
+                    <p>-determine the number of solutions of an equation by considering appropriate graphs.</p>
+                    <p>-solve linear and quadratic inequalities by sketching appropriate graphs.</p>    
+                    </div>
+                    </div>    
+
+
+
+                    <div class="my-sm-3 pt-3">
+
+                    <div class="pt-5" id="arith-seq"><span></span></div>
+
+                    <h2 class="color-main-headings mb-3" id="series">Topic 7- Series and sequences</h2>
+
+
+                    <h4 class="mt-4 color-main-subtopics" id="arith-seq">1. Arithmetic sequences</h4>
+                    <p>In this lesson, we will discuss arithmetic sequences, exploring their properties and methods to find specific terms.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/7qCP7Ewvvj4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-know the difference between a sequence and a series.</p>
+                    <p>-recognise and use the recursive definition of an arithmetic sequence: 𝑇𝑛 = 𝑇𝑛−1 + 𝑑, 𝑇1 = 𝑎 .</p>
+                    <p>-establish and use the formula for the 𝑛 th term (where 𝑛 is a positive integer) of an arithmetic 
+                    sequence: 𝑇𝑛 = 𝑎 + (𝑛 − 1) 𝑑, where 𝑎 is the first term and 𝑑 is the common difference, and recognise its linear nature.</p>   
+                    </div>
+
+                    <div class="pt-5" id="series-sig-notat"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="series-sig-notat">2. Series and sigma notation</h4>
+                    <p>We will introduce series and sigma notation, providing a concise way to write long sums.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/TmQl1ftx1RA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-know the difference between a sequence and a series.</p>   
+                    </div>
+
+                    <div class="pt-5" id="arith-ser"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="arith-ser">3. Arithmetic series</h4>
+                    <p>Arithmetic series will be the focus of this lesson, including formulae to find the sum of a series.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/fT03_7sUJ4c" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-establish and use the formulae for the sum of the first 𝑛 terms of an arithmetic sequence:
+                     𝑆𝑛 = 𝑛 2 (𝑎 +𝑙) where 𝑙 is the last term in the sequence and 𝑆𝑛 = 𝑛/2 {2𝑎 +(𝑛 − 1) 𝑑}.</p>   
+                    <p>-identify and use arithmetic sequences and arithmetic series in contexts involving discrete linear growth or decay such as simple interest.</p>
+                    </div>
+
+                    <div class="pt-5" id="geo-seq"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="geo-seq">4. Geometric sequences</h4>
+                    <p>We will delve into geometric sequences, distinguishing them from arithmetic sequences, and introducing methods to find specific terms.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/krMILs6Qgq8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-establish and use the formulae for the sum of the first 𝑛 terms of an arithmetic sequence:
+                     𝑆𝑛 = 𝑛 2 (𝑎 +𝑙) where 𝑙 is the last term in the sequence and 𝑆𝑛 = 𝑛/2 {2𝑎 +(𝑛 − 1) 𝑑} .</p>   
+                    <p>-recognise and use the recursive definition of a geometric sequence: 𝑇𝑛 = 𝑟𝑇𝑛−1 , 𝑇1 = 𝑎 .</p>
+                    </div>
+
+                    <div class="pt-5" id="fin-geo-ser"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="fin-geo-ser">5. Finite geometric series</h4>
+                    <p>We will learn to find the sum of a finite geometric series, building on the understanding of geometric sequences.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/N4ek81Rqj1M" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-establish and use the formula for the sum of the first 𝑛 terms of a geometric sequence: 𝑆𝑛 = 𝑎(1−𝑟^𝑛)/1−𝑟 = 𝑎(𝑟^𝑛−1)/ 𝑟−1 .</p>   
+                    </div>
+
+                    <div class="pt-5" id="infin-geo-ser"><span></span></div>
+
+                    <h4 class="mt-5 color-main-subtopics" id="infin-geo-ser">6. Infinite geometric series</h4>
+                    <p>We will discuss infinite geometric series, including criteria for convergence and methods to find the sum of converging series.</p>
+                    <div class="video-container index-min">
+                        <iframe src="https://www.youtube.com/embed/XS4MVhB5ZQg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="fw-bold">Syllabus dot-points covered:</p>
+                    <div class="lh-1 mb-3">
+                    <p>-derive and use the formula for the limiting sum of a geometric series with |𝑟| < 1: 𝑆 = 𝑎 1−𝑟 .</p>  
+                    <p>-understand the limiting behaviour as 𝑛 → ∞ and its application to a geometric series as a limiting sum.</p>
+                    <p>-use the notation lim𝑛→∞ 𝑟 𝑛 = 0 for |𝑟| < 1.</p> 
+                    </div>
+                    </div>    
+
+                    <div class="pt-5" id="review"><span></span></div>
+
+                    <div class="mt-5 pt-5 text-center align-items-center justify-content-center flex-column min-vh-100" id="review">
+                    <h1 class="color-main-headings"> HSC Simplified Feedback </h1>
+                    <p class="h2"> Let us know how we went, what we can improve on, and what you think HSC Simplified is missing. All feedback is highly appreciated! </p>
+                    <button id="mybutton" class="my-sm-3 btn-purple"><a class="h2 btn-text" href="https://docs.google.com/forms/d/e/1FAIpQLSdoiFSrWdJgL0J-yNsmQ6eDJhf2uTeAXordkASav1BSMAsgUQ/viewform?usp=sf_link" target="_blank">Take the quiz</a></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
