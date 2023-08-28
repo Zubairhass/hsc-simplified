@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=yes" />
+        <title>HSC Simplified</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white position-fixed mt-4 index-max" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light h-auto">Dashboard</div>
+
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle list-group-item list-group-item-light p-3 mt-2 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trigonometric equations</a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#trig-graph">1. Graphing trig functions</a>
+                        <a class="dropdown-item" href="#trig-graph-hard">2. Graphing harder trig functions</a>
+                        <a class="dropdown-item" href="#solve-trig">3. Solving trig equations</a>
+                        <a class="dropdown-item" href="#approx-trig">4. Approximating graph solutions</a>
+                        <a class="dropdown-item" href="#trig-app">5. Applications of trig</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Further derivatives</a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#yr11-review">1. Yr 11 review of differentiation</a>
+                        <a class="dropdown-item" href="#trig-deriv">2. Derivatives of trig functions</a>
+                        <a class="dropdown-item" href="#deriv-logs">3. Derivatives of logarithmic functions</a>
+                        <a class="dropdown-item" href="#deriv-expos">4. Derivatives of exponential values</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Further further derivatives</a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#deriv-sign">1. Sign of the derivative</a>
+                        <a class="dropdown-item" href="#deriv-turn">2. First derivative of turning points</a>
+                        <a class="dropdown-item" href="#deriv-concave">3. The second derivative and concavity</a>
+                        <a class="dropdown-item" href="#diff-motion">4. Applications of differentiation: motion</a>
+                        <a class="dropdown-item" href="#diff-rates">5. Applications of differentiation: rates</a>
+                        <a class="dropdown-item" href="#diff-opt">6. Applications of differentiation: optimisation question</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Integration begins</a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#prim-funct">1. Primitive functions intro</a>
+                        <a class="dropdown-item" href="#indef-integ">2. Indefinite integrals</a>
+                        <a class="dropdown-item" href="#prim-trig-funct">3. Primitives of trigonometric functions</a>
+                        <a class="dropdown-item" href="#integ-expo-funct">4. Integrating exponential functions</a>
+                        <a class="dropdown-item" href="#integ-log-funct">5. Integrating the logarithmic function</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Integration continues</a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#area-curve-rect">1. Area under a curve using rectangles</a>
+                        <a class="dropdown-item" href="#def-integs">2. Definite integrals</a>
+                        <a class="dropdown-item" href="#calculus">3. Thereom of calculus and calculating areas</a>
+                        <a class="dropdown-item" href="#area">4. Finding more areas</a>
+                        <a class="dropdown-item" href="#area-2-curve">5. Area between 2 curves</a>
+                        <a class="dropdown-item" href="#area-y-axis">6. Area bound by Y-axis</a>
+                        <a class="dropdown-item" href="#def-integs-trig-functs">7. Definite integrals involving trig functions</a>
+                        <a class="dropdown-item" href="#def-integs-expo-logs-functs">8. Definite integrals involving exponential and logarithmic functions</a>
+                        <a class="dropdown-item" href="#app-integ-motion">9. Applications of integration - Motion</a>
+                        <a class="dropdown-item" href="#app-integ-rates">10. Applications of integration - Rates</a>
+                        <a class="dropdown-item" href="#trap-rule">11. Trapezoidal rule</a>
+                        <a class="dropdown-item" href="#reverse-chain-rule">12. Reverse Chain Rule</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Graphing</a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#asymptotes">1. Horizontal and vertical asymptotes</a>
+                        <a class="dropdown-item" href="#rev-curve-sketch">2. Review of common curves + curve-sketching</a>
+                        <a class="dropdown-item" href="#tran-ref-curves">3. Translation + reflection of curves</a>
+                        <a class="dropdown-item" href="#curve-dial">4. Curve dilation</a>
+                        <a class="dropdown-item" href="#comb-trans">5. Combining transformations</a>
+                        <a class="dropdown-item" href="#solv-ineq">6. Solving inequalities</a>
+                        <a class="dropdown-item" href="#graph-solve-eq-ineq">7. Using graphs to solve equations and inequations</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle list-group-item list-group-item-light p-3 border-bottom color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Series and Sequences</a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#arith-seq">1. Arithmetic sequences </a>
+                        <a class="dropdown-item" href="#series-sig-notat">2. Series and sigma notation</a>
+                        <a class="dropdown-item" href="#arith-ser">3. Arithmetic series</a>
+                        <a class="dropdown-item" href="#geo-seq">4. Geometric sequences</a>
+                        <a class="dropdown-item" href="#fin-geo-ser">5. Finite geometric series</a>
+                        <a class="dropdown-item" href="#infin-geo-ser">6. Infinite geometric series</a>
+                    </div>
+                </li>
+                </ul>
+
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom position-fixed min-vw-100 h-auto index-max">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="ms-2"><span></span></div>
+                    <button class="btn btn-primary" id="sidebarToggle">Topic List</button>
+                    <header class="ms-2 h2 mt-2 navbar-text color-main-headings">HSC Simplified</header>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Topic List</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="./trig.html">Trigonometric equations</a>
+                                    <a class="dropdown-item" href="./deriv.html">Further Derivatives</a>
+                                    <a class="dropdown-item" href="./deriv2.html">Further Further Derivatives</a>
+                                    <a class="dropdown-item" href="./integbegins.html">Integration Begins</a>
+                                    <a class="dropdown-item" href="./integcontinues.html">Integration Continues</a>
+                                    <a class="dropdown-item" href="./graphing.html">Graphing</a>
+                                    <a class="dropdown-item" href="./sns.html">Series and Sequences</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link color-main-headings" href="https://docs.google.com/forms/d/e/1FAIpQLSdoiFSrWdJgL0J-yNsmQ6eDJhf2uTeAXordkASav1BSMAsgUQ/viewform?usp=sf_link" target="_blank">Reviews</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle color-main-headings" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Tutoring Classes</a>
+                                    <a class="dropdown-item" href="#!">Social Medias</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <div class="container-fluid pt-5 w-65 m-auto text-center"> 
+    <div class="my-sm-3 pt-3">
+
+        <div class="pt-5" id="deriv-sign"><span></span></div>
+
+        <h2 class="color-main-headings mb-3" id="f-derivatives">Topic 3- Further further derivatives</h2>
+        
+        <h4 class="mt-4 color-main-subtopics" id="deriv-sign">1. The sign of the derivative</h4>
+        <p>We will examine the sign of the derivative and its significance in analysing a function's behaviour.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/g1o5j54Z8AM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="fw-bold">Syllabus dot-points covered:</p>
+        <div class="lh-1 mb-3">
+        <p>-use the first derivative to investigate the shape of the graph of a function.</p>
+        <p>-deduce from the sign of the first derivative whether a function is increasing, 
+        decreasing or stationary at a given point or in a given interval .</p>
+        <p>-use the first derivative to find intervals over which a 
+        function is increasing or decreasing, and where its stationary points are located.</p>
+        <p>-use the first derivative to investigate a stationary point of a function over a 
+        given domain, classifying it as a local maximum, local minimum or neither .</p>
+        <p>-determine the greatest or least value of a function over a given domain 
+        (if the domain is not given, the natural domain of the function is assumed) and 
+        distinguish between local and global minima and maxima.</p>
+        </div>  
+        
+        <div class="pt-5" id="deriv-turn"><span></span></div>                    
+
+        <h4 class="mt-5 color-main-subtopics" id="deriv-turn">2. The first derivative and turning points</h4>
+        <p>In this lesson, we will discuss how the first derivative relates to turning points or extrema of a function</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/fEB1b8FDMMw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="fw-bold">Syllabus dot-points covered:</p>
+        <div class="lh-1 mb-3">
+        <p>-use the first derivative to investigate the shape of the graph of a function.</p>
+        <p>-deduce from the sign of the first derivative whether a function is increasing, 
+        decreasing or stationary at a given point or in a given interval.</p>
+        <p>-use the first derivative to find intervals over which a 
+        function is increasing or decreasing, and where its stationary points are located.</p>
+        <p>-use the first derivative to investigate a stationary point of a function over a 
+        given domain, classifying it as a local maximum, local minimum or neither.</p>
+        <p>-determine the greatest or least value of a function over a given domain 
+        (if the domain is not given, the natural domain of the function is assumed) and 
+        distinguish between local and global minima and maxima.</p>
+        </div> 
+
+        <div class="pt-5" id="deriv-concave"><span></span></div>
+
+        <h4 class="mt-5 color-main-subtopics" id="deriv-concave">3. The second derivative and concavity</h4>
+        <p>We will delve into the second derivative, its relation to concavity, and how it can identify inflection points.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/JqQxfOSMurI" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="fw-bold">Syllabus dot-points covered:</p>
+        <div class="lh-1 mb-3">
+        <p>-define and interpret the concept of the second derivative as the rate of change of the first derivative function 
+        in a variety of contexts, for example recognise acceleration as the second derivative of displacement with respect to time.</p>
+        <p>-understand the concepts of concavity and points of inflection and their relationship with the second derivative.</p>
+        <p>-use the second derivative to determine concavity and the nature of stationary points.</p>
+        <p>-understand that when the second derivative is equal to 0 this does not necessarily represent a point of inflection.</p>
+        <p>-use calculus to determine and verify the nature of stationary points, find local and global maxima and minima and points 
+        of inflection (horizontal or otherwise), examine behaviour of a function as 𝑥 → ∞ and 𝑥 → −∞ and hence sketch the graph of the function.</p>
+        </div>     
+
+        <div class="pt-5" id="diff-motion"><span></span></div>
+
+        <h4 class="mt-5 color-main-subtopics" id="diff-motion">4. Applications of differentiation: motion</h4>
+        <p>The concept of differentiation will be applied to motion problems, helping us understand velocity, acceleration, and related concepts.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/RjxqsF_ZBXE" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="fw-bold">Syllabus dot-points covered:</p>
+        <div class="lh-1">
+        <p>-use any of the functions covered in the scope of this syllabus and their derivatives to solve practical and abstract problems.</p>
+        </div>
+
+        <div class="pt-5" id="diff-rates"><span></span></div>
+
+        <h4 class="mt-5 color-main-subtopics" id="diff-rates">5. Applications of differentiation: rates</h4>
+        <p>We will explore the concept of rates of change and how differentiation can be used to investigate these rates.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/bb7O1GxMEWo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="fw-bold">Syllabus dot-points covered:</p>
+        <div class="lh-1">
+        <p>-use any of the functions covered in the scope of this syllabus and their derivatives to solve practical and abstract problems.</p>
+        </div>
+
+        <div class="pt-5" id="diff-opt"><span></span></div>
+
+        <h4 class="mt-5 color-main-subtopics" id="diff-opt">6. Applications of differentiation: optimisation question</h4>
+        <p>We will focus on optimization problems, showing how calculus can be used to find optimal solutions in various scenarios.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/PuBQrL_jgyA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="fw-bold">Syllabus dot-points covered:</p>
+        <div class="lh-1 mb-3">
+        <p>-solve optimisation problems for any of the functions covered in the scope of this syllabus, in a wide variety of
+        contexts including displacement, velocity, acceleration, area, volume, business, finance and growth and decay.</p>
+        <p>-define variables and construct functions to represent the relationships between variables related to contexts
+        involving optimisation, sketching diagrams or completing diagrams if necessary.</p>
+        <p>-use calculus to establish the location of local and global maxima and minima, 
+        including checking endpoints of an interval if required.</p>
+        <p>-evaluate solutions and their reasonableness given the 
+        constraints of the domain and formulate appropriate conclusions to optimisation problems.</p>
+        </div> 
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+</body>
+</html>
